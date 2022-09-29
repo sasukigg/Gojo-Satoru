@@ -19,18 +19,18 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['96891103640']
-global.premium = ['96891103640']
-global.ownernomer = '96891103640'
+global.owner = ['967777775167']
+global.premium = ['967777775167']
+global.ownernomer = '967777775167'
 global.ownername = '( الـمـطـور )'
-global.botname = '( بـوت غـوجـو )'
-global.footer = '( غـوجـو )'
+global.botname = '( بـوت ساسڪي )'
+global.footer = '( اوتشيها ساسڪي )'
 global.ig = 'https://github.com/nexusNw'
 global.region = 'India, South India, Kerala'
-global.sc = 'https://chat.whatsapp.com/CKLmAGJo3iw5AvNM1KZee3'
-global.myweb = 'https://youtube.com/channel/UCPvrnWknQrgCSIeobXMP0Uw'
-global.packname = 'https://Wa.Me/+96891103640'
-global.author = '[ غـوجـو ]'
+global.sc = 'https://chat.whatsapp.com/ExMQthThZBT7qOQzoCOyYu'
+global.myweb = 'https://youtu.be/wpEh8cwe8Lk'
+global.packname = 'https://Wa.Me/+967777775167'
+global.author = '[ ساسڪي ]'
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
@@ -38,11 +38,11 @@ global.mess = {
     success: '✓',
     admin: '*「 هـذا الامـر فـقـط لـ المـشـرفـيـن 」◣*',
     botAdmin: '*「 اعـطـنـي إشـراف لـتـفـعـيـل  الامـر 」◣*',
-    owner: '*「 هـذا الامـر فـقـط لـ الـمـالـك 」◣*',
+    owner: '*「 هـذا الامـر فـقـط لـ الـمـالـك ساسڪي 」◣*',
     group: '*「 هـذا الامـر فـي الـمـجـمـوعـات فـقـط 」◣*',
     private: '*「 هـذا الامـر فـي الـخـاص فـقـط 」◣*',
-    bot: '*「 هـذا الامـر مـخـصـص لـ الـبـوت 」◣*',
-    wait: '*「 انـتـظـر مـن فـضـلـك 」◣*',
+    bot: '*「 هـذا الامـر مـخـصـص لـ مالڪ الـبـوت ساسڪي 」◣*',
+    wait: '*「  تم الحين اجهزه  」◣*',
     error: 'Error! Maybe Api Key Is Expired🤔!',
     endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 1000 Hours',
 }
