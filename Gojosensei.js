@@ -1168,11 +1168,11 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `@${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-	    「 معلش زوجناكم لأنكم تصلحون لبعض 🤡 」◣
+	    「 معلش زوجناكم لأني اشوفڪم تصلحون لبعض 🤡 」◣
 	    「 الي يشوفهم مناسبين لبعض زيي يضغط يب 🤡 」◣`
             let menst = [orang, jodoh]
             let buttons = [
-                        { buttonId: '「 يب هم مناسبين لبعض😂🤡 」◣', buttonText: { displayText: '「 يب هم مناسبين لبعض😂🤡 」◣' }, type: 1 }
+                        { buttonId: '「 يب هم مناسبين لبعض 」◣', buttonText: { displayText: '「 يب هم مناسبين لبعض 」◣' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: menst})
             }
@@ -1443,7 +1443,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!isAdmins) return replay(`${mess.admin}`)
 let teks = `「المنشن الجماعي」◣
  
- ➲ *${q ? q : 'اصحو من النوم'}*\n\n`
+ ➲ *${q ? q : 'الادمن يقول اصحو من النوم'}*\n\n`
                 for (let mem of participants) {
                 teks += `👤 @${mem.id.split('@')[0]}\n`
                 }
@@ -1751,7 +1751,7 @@ break
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '「 قناتي 」「📍」◣',
+                                    displayText: '「 اوتشيها ساسڪي 」「📍」◣',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -1765,7 +1765,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 غوجو ساتورو موجود 🎉 」\n\n${text}`
+                      let txt = `「 اوتشيها ساسڪي موجود 🎉 」\n\n${text}`
                       GojoMdNx.send5ButImg(i, txt, GojoMdNx.user.name, global.thumb, btn)
                     }
                 reply(`「 تم  ✌ 」◣`)
@@ -1785,7 +1785,7 @@ break
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '「 قناتي 」「📍」◣', 
+                                    displayText: '「 اوتشيها ساسڪي 」「📍」◣', 
                                     url: `${myweb}`
                                 }
                             }, {
@@ -1799,7 +1799,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 غوجو ساتورو موجود 🎉」\n\n${text}`
+                      let txt = `「 اوتشيها ساسڪي موجود 🎉」\n\n${text}`
                       GojoMdNx.send5ButImg(yoi, txt, GojoMdNx.user.name, global.thumb, btn)
 		}
 		reply('「 تم 🤗 」◣')
@@ -1847,13 +1847,13 @@ break
                  GojoMdNx.sendTextWithMentions(m.chat, teks, m)
              }
              break
-             case 'قائمة المتصلين': case 'المتصلين': {
+             case 'ساسكي مين فاتح': case 'المتصلين': {
                     let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
                     let online = [...Object.keys(store.presences[id]), botNumber]
                     GojoMdNx.sendText(m.chat, '「 الموجودين الأن 」◣\n\n' + online.map(v => '👤 @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
              }
              break
-            case 'ملصق': case 's': case 'ستيكر': case 'س': {
+            case 'ساسكي ملصق': case 's': case 'ساسكي ستيكر': case 'س': {
             if (!quoted) return replay(`Reply Video/Image With Caption ${prefix + command}`)
             reply(mess.wait)
                     if (/image/.test(mime)) {
@@ -1933,7 +1933,7 @@ break
 		}
 	    }
 	    break
-            case 'لصورة': case '1اعلا': {
+            case 'ساسكي لصورة': case '1اعلا': {
                 if (!quoted) return reply(`Reply Image`)
                 if (!/webp/.test(mime)) reply(`منشن على ستيكر واكتب  *${prefix + command}*`)
                 reply(mess.wait)
@@ -2362,7 +2362,7 @@ break
                 GojoMdNx.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/'+command, {}, 'apikey') }, caption: 'Generated Random ' + command }, { quoted: m })
             }
             break
-	    case 'تطقيم':  case 'طقم': {
+	    case 'ساسكي تطقيم':  case 'ساسكي طقم': {
                 reply(mess.wait)
                 let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
                 let random = anu[Math.floor(Math.random() * anu.length)]
@@ -2370,7 +2370,7 @@ break
                 GojoMdNx.sendMessage(m.chat, { image: { url: random.female }, caption: `「 بنت 」「👧🏻」◣` }, { quoted: m })
             }
 	    break
-            case 'قهوة': case 'شاي': {
+            case 'ساسكي قهوة': case 'ساسكي شاي': {
             let buttons = [
                     {buttonId: `شاي`, buttonText: {displayText: '➡️'}, type: 1}
                 ]
@@ -3266,13 +3266,13 @@ reply(`*「 تم اضافة الرسالة」◣*'${text}'
             case 'عام': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 GojoMdNx.public = true
-                reply('*「 تم 」◣*')
+                reply('*「 تم تحويل البوت ساسكي الئ عام يمكنك استخدامه  」◣*')
             }
             break
             case 'خاص': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 GojoMdNx.public = false
-                reply('*「 تم 」◣*')
+                reply('*「 تم تحويل البوت ساسكي الئ خاص لايمكنك استخدامه 」◣*')
             }
             break
             case 'ping': case 'botstatus': case 'statusbot': {
@@ -3384,19 +3384,19 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `┌─❖
 ┌─❖ مـرحبـاً 🤗 」
 └┬❖ 「 ${pushname} 」
-││✑「مـعـك بـوت غـوجـو 👋🏻」◣
-││✑「مـن مـمـلـكـة غولد 🤗」◣
+││✑「مـعـك بـوت اوتشيها ساسڪي 👋🏻」◣
+││✑「مـن مـمـلـكـة ڪينجدوم」◣
 │└───────────────┈ ⳹
  「 مـعـلـومـات عـن الـبـوت 」
-│✙「 اسـم الـبـوت 」◣ : 「 غوجو ✨🤞🏻 」◣
+│✙「 اسـم الـبـوت 」◣ : 「 اوتشيها ساسڪي 」◣
 │✙「 رقـم الـمـالـك 」◣ : ${global.owner}
 │✙「عـدد الـمـسـتـخـدمـيـن」◣ : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
-   │✑  「 اضـغـط عـلـى الـخـيـارات 🤗 」◣
+   │✑  「 اضـغـط عـلـى الـخـيـارات 」◣
    └───────────────┈ ⳹`,
                              hydratedButtons: [{
                                 urlButton: {
-                                    displayText: '「 قناتي 」「📍」◣',
+                                    displayText: '「 اوتشيها ساسڪي 」「📍」◣',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -3439,19 +3439,19 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedFooterText: `
 ┌─❖ مـرحبـاً 🤗 」
 └┬❖ 「 ${pushname} 」
-││✑「مـعـك بـوت غـوجـو 👋🏻」◣
-││✑「مـن مـمـلـكـة غولد 🤗」◣
+││✑「مـعـك بـوت اوتشيها ساسڪي 👋🏻」◣
+││✑「مـن مـمـلـكـة ڪينجدوم」◣
 │└───────────────┈ ⳹
  「 مـعـلـومـات عـن الـبـوت 」
-│✙「 اسـم الـبـوت 」◣ : 「 غوجو ✨🤞🏻 」◣
+│✙「 اسـم الـبـوت 」◣ : 「 اوتشيها ساسڪي 」◣
 │✙「 رقـم الـمـالـك 」◣ : ${global.owner}
 │✙「عـدد الـمـسـتـخـدمـيـن」◣ : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
-   │✑  「 اضـغـط عـلـى الـخـيـارات 🤗 」◣
+   │✑  「 اضـغـط عـلـى الـخـيـارات 」◣
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: '「 قناتي 」「📍」◣',
+                                    displayText: '「 اوتشيها ساسڪي 」「📍」◣',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -3485,15 +3485,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `「 مرحبا 👋🏻  」◣
-		    「 معك بوت غوجو 🤗 」◣
+		    「 معك بوت اوتشيها ساسڪي 🤗 」◣
 		    「 افضل بوت عربي 」◣
 
- 「 رابط شرح كيف تصنع بوت عربي طريقة سهله راقب وتعلم. ولاتنسى الاشتراك بالقناة」◣
-		    「https://youtu.be/MBPIx3f-VIA」◣
-		    「 اتمنى ان تعملو اشتراك للقناة وتنشروها اذا تقدرو عشان ينتشر المقطع كمان والكل يستفيد وجزاه الله خير الي يشترك 💖🤗」◣                 
- 「 رابط فرع التعليم على البوت」◣
-		    「https://chat.whatsapp.com/Gb62eN2S5yI9mhfdn6Ma4z」◣
-		    「 الي محتاج شروحات ينضم 」◣`,
+「 رابط نقابتنا الجميله اتمنا تشرفونا 」◣
+		    「https://chat.whatsapp.com/ExMQthThZBT7qOQzoCOyYu」◣
+		   「  🥀 شرفونا بحضورڪم   」◣                 
+ 「 🧸 رابط قروب استكرز وصور وكل شي يخص الانمي    」◣
+		    「https://chat.whatsapp.com/KhKWzDGqs56LuBPGfVyEFB」◣
+		    「 الي محتاج  شي يتواصل مع المالك 」◣`,
                     description: `「 اختر قائمة من فضلك 」◣`,
                     buttonText: "「 القائمة 」◣",
                     footerText: `「 تحت الصيانة ⚙️」◣`,
@@ -3620,9 +3620,9 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'التسجhgjيل': case 'التسجيل': {
-                reply(`「 الفرع الخاص ل التعليم على البوت 」◣
+                reply(`「 الفرع الخاص لكل شي يخص الانمي    」◣
 
-「 _https://chat.whatsapp.com/CKLmAGJo3iw5AvNM1KZee3_ 」◣
+「 _https://chat.whatsapp.com/KhKWzDGqs56LuBPGfVyEFB 」◣
 
 「 نرحب بالجميع. 」◣`)
             }
@@ -3866,7 +3866,7 @@ case '9807786789678': {
                             hydratedFooterText: `${pushname}`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: '「 قناتي 」「📍」◣',
+                                    displayText: '「 اوتشيها ساسڪي 」「📍」◣',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -3900,7 +3900,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╔═✪「 المجموعات 」	        
 ┃╠المنشن
 ┃╠المنشن.المخفي
-┃╠المتصلين
+┃╠ساسكي مين فاتح
 ┃╠الرابط
 ┃╠اضافة
 ┃╠ترقية 
@@ -3909,7 +3909,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠الجروب
 ┃╠التعديل
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 		
 
@@ -3925,7 +3925,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠الكتابة | كتتت
 ┃╠بوت اعمل فعالية المارد
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 
 case 'funmenu':
@@ -3973,7 +3973,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠وصخ
 ┃╠ورع
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 
 case 'ownermenu':
@@ -3987,7 +3987,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠عام
 ┃╠خاص
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'.6.')
@@ -3997,7 +3997,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠رابط فيديو | ytmp4
 ┃╠رابط صوتية | ytmp3
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'.7.')
@@ -4007,18 +4007,18 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠صورة
 ┃╠فيديو
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'.8.')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══✪「 صور الانمي 」	        
-┃╠تطقيم |طقم
+┃╠ساسكي تطقيم |طقم
 ┃╠لولي
 ┃╠وايفو
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'.9.')
@@ -4047,7 +4047,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠تنمر | bully
 ┃╠تقبيل | kiss
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'.14.')
@@ -4056,7 +4056,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╔═✪「 الزخرفة 」	        
 ┃╠زخرفة  انقلش | styletext
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'.11.')
@@ -4064,13 +4064,13 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══✪「 التحويلات 」	        
 ┃╠ملصق |ستيكر | س
-┃╠لصورة
+┃╠ساسكي حول لصورة
 ┃╠لفيديو
 ┃╠لمقطع.صوتي
 ┃╠لصوتية
 ┃╠لجيف
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'.12.')
@@ -4081,7 +4081,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠قائمة.الرسائل
 ┃╠حذف.رسالة
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'anon':
 var unicorn = await getBuffer(picak+'.17.')
@@ -4116,7 +4116,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
     「 بطاقة تطهير طرد 」
     「 بطاقة مشرف 」
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'.15.')
@@ -4125,7 +4125,7 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╔══✪「 القرآن الكريم 」	        
 ┃╠القرآن | juzamma pdf
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'.13.')
@@ -4136,20 +4136,20 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╠بطيء | slow
 ┃╠سمين | fat
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيها ساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'.16.')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══✪「 الأضافات 」	        
-┃╠شاي | قهوة
+┃╠ساسكي شاي | ساسكي قهوة
 ┃╚═════════════✪
-┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "「 اوتشيهاساسڪي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'.18.')
-await GojoMdNx.send5ButImg(from, `` + '' + ' ', `مملكة غولد كانت تضم حوالي 50 نقابة كانت من افضل الممالك قديما بقيادة الامبراطور توشيرو والنائب ساتومي من نأحية التحديات والمسابقات كانت المملكة من الاوائل وقتها لكن في مرة من الايام تعطل هاتف الامبراطور توشيرو واختفى حوالي سنتين وعندما عاد  اختفت المملكة وكل شيء  والان هو يحاول ان يحيئ مملكته من البداية التي لاتضم اي نقابة حاليا وخطوته الاولى كانت بأن يعمل بوت وهو انا كيف تشوفوني ؟ ههه مو مشكلة المهم توشيرو  يقول اذا بدكم تنضمون معنا اضغطو ع زر رابط الاستقبال.`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
+await GojoMdNx.send5ButImg(from, `` + '' + .'.ستقبال.`,unicorn, [{"urlButton": {"displayText": "「 قناتي 」「📍」◣","url": `${myweb}`}},{"urlButton": {"displayText": "「 رابط الاستقبال 」「📌」◣","url": `${sc}`}},{"quickReplyButton": {"displayText": "「 الاستلام 」「🍜」◣","id": 'donate'}},{"quickReplyButton": {"displayText": "「 المالك 」「👤」◣","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
